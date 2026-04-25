@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-progess {
+  animation: progree 4s linear forwards;
+}
