@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Row from "./components/Row";
 import MovieList from "./components/MovieList";
+import Footer from "./components/Footer";
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -73,6 +74,8 @@ function App() {
             title="📺 TV Shows"
             fetchUrl="https://api.themoviedb.org/3/tv/popular?"
           />
+
+          <Footer />
         </>
       ) : loading ? (
         <div className="text-white text-center mt-20 text-xl">

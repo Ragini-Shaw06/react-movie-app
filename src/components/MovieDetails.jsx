@@ -41,10 +41,10 @@ const MovieDetails = () => {
   }
 
   return (
-    <div className="text-white min-h-screen bg-black">
+    <div className="text-white bg-black ">
       <button
         onClick={() => window.history.back()}
-        className="absolute top-6 left-6 z-50 bg-black/60 px-4 py-2 rounded hover:bg-black cursor-pointer"
+        className="absolute top-2 left-6 z-50 bg-black/60 px-4 py-2 rounded hover:bg-black cursor-pointer"
       >
         ← Back
       </button>
@@ -55,7 +55,7 @@ const MovieDetails = () => {
         poster={movie.poster_path}
       />
 
-      <div className="p-8 -mt-52 relative z-10 flex gap-8 items-end">
+      <div className="absolute bottom-10 left-10 z-20 flex gap-8 items-end">
         <img
           src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`}
           alt={movie.title}

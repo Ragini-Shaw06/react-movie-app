@@ -23,11 +23,11 @@ const BackgroundTrailer = ({ movieId, backdrop, poster }) => {
   const imagePath = backdrop || poster;
 
   return (
-    <div className="relative h-[80vh] w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
       {trailer ? (
         <iframe
           src={`https://www.youtube.com/embed/${trailer.key}?autoplay=1&mute=1&loop=1&playlist=${trailer.key}&controls=0`}
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full scale-125 object-cover"
           allow="autoplay"
           title="Trailer"
         />
